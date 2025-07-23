@@ -101,11 +101,11 @@ button:hover {
 
 .meals-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
-.meals {
+.meal {
   background-color: var(--card-bg);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
@@ -115,18 +115,18 @@ button:hover {
   position: relative;
 }
 
-.meals:hover {
+.meal:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.meals img {
+.meal img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
-.meals-info {
+.meal-info {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   color: var(--text-dark);
@@ -136,7 +136,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
-.meals-category {
+.meal-category {
   display: inline-block;
   background-color: var(--primary-light);
   color: var(--text-dark);
