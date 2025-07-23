@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Recipe.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -25,9 +26,25 @@
           id="serach-input"
           placeholder="Search for meals or keywords"
         />
-
         <button id="search-btn">Search</button>
       </div>
+
+      <div class="error-container" class="hidden">
+        <p>No meals found. Try another Search term!</p>
+      </div>
+
+      <div class="result-heading"></div>
+
+      <div id="meals" class="meals-container">
+        <div id="meal-details" class="hidden">
+          <button id="back-btn">
+            <i class="fas fa-arrow-left"></i>Back to recipes
+          </button>
+
+          <div class="meal-details-content"></div>
+        </div>
+      </div>
     </div>
+    <script src="./Recipe.js"></script>
   </body>
 </html>
