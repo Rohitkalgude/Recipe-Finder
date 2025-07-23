@@ -102,7 +102,6 @@ async function handlemealClick(e) {
         }
       }
 
-      // display meal details
       mealDetailsContent.innerHTML = `
         <img src="${meal.strMealThumb}" alt="${
         meal.strMeal
